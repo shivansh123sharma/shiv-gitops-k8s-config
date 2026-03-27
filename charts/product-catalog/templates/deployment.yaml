@@ -4,7 +4,7 @@ metadata:
   name: product-catalog
   namespace: default
 spec:
-  replicas: {{ .values.replicaCount }}
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: product-catalog
